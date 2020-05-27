@@ -67,12 +67,12 @@
                     include '../koneksi.php';
                     $no = 1;
                     $data = mysqli_query($koneksi,
-                     "SELECT mr_tt.kelas, mr_unit.nama_unit, mr_tt.no_bed, mr_tt.ket_antri
+                     "SELECT mr_tt.kelas, mr_unit.nama_unit, mr_tt.no_bed, mr_tt.id_register
                       FROM mr_tt, mr_unit
                       WHERE mr_tt.id_unit = mr_unit.id_unit
                       AND mr_tt.id_unit = 6;");
                     while($d = mysqli_fetch_array($data)){
-                    $ket_antri = $d['ket_antri'];
+                    $id_register = $d['id_register'];
                   ?>
                   <tr>
                     <td><center><?php echo $no++; ?></td>
@@ -81,7 +81,7 @@
                     <td><center>Bed <?php echo $d['no_bed']; ?></td>
                     <td><center>
                       <?php
-                      if(!$ket_antri){
+                      if($id_register=='123'){
                       ?>
                         <font class="greentext">Kosong</font>
                       <?php
@@ -98,12 +98,12 @@
                   <?php 
                     include '../koneksi.php';
                     $data = mysqli_query($koneksi,
-                     "SELECT mr_tt.kelas, mr_unit.nama_unit, mr_tt.no_bed, mr_tt.ket_antri
+                     "SELECT mr_tt.kelas, mr_unit.nama_unit, mr_tt.no_bed, mr_tt.id_register
                       FROM mr_tt, mr_unit
                       WHERE mr_tt.id_unit = mr_unit.id_unit
                       AND mr_tt.id_unit = 29;");
                     while($d = mysqli_fetch_array($data)){
-                    $ket_antri = $d['ket_antri'];
+                    $id_register = $d['id_register'];
                   ?>
                   <tr>
                     <td><center><?php echo $no++; ?></td>
@@ -112,7 +112,7 @@
                     <td><center>Bed <?php echo $d['no_bed']; ?></td>
                     <td><center>
                       <?php
-                      if(!$ket_antri){
+                      if($id_register=='123'){
                       ?>
                         <font class="greentext">Kosong</font>
                       <?php
@@ -129,12 +129,12 @@
                   <?php 
                     include '../koneksi.php';
                     $data = mysqli_query($koneksi,
-                     "SELECT mr_tt.kelas, mr_unit.nama_unit, mr_tt.no_bed, mr_tt.ket_antri
+                     "SELECT mr_tt.kelas, mr_unit.nama_unit, mr_tt.no_bed, mr_tt.id_register
                       FROM mr_tt, mr_unit
                       WHERE mr_tt.id_unit = mr_unit.id_unit
                       AND mr_tt.id_unit = 24;");
                     while($d = mysqli_fetch_array($data)){
-                    $ket_antri = $d['ket_antri'];
+                    $id_register = $d['id_register'];
                   ?>
                   <tr>
                     <td><center><?php echo $no++; ?></td>
@@ -143,7 +143,7 @@
                     <td><center>Bed <?php echo $d['no_bed']; ?></td>
                     <td><center>
                       <?php
-                      if(!$ket_antri){
+                      if($id_register=='123'){
                       ?>
                         <font class="greentext">Kosong</font>
                       <?php
@@ -160,12 +160,12 @@
                   <?php 
                     include '../koneksi.php';
                     $data = mysqli_query($koneksi,
-                     "SELECT mr_tt.kelas, mr_unit.nama_unit, mr_tt.no_bed, mr_tt.ket_antri
+                     "SELECT mr_tt.kelas, mr_unit.nama_unit, mr_tt.no_bed, mr_tt.id_register
                       FROM mr_tt, mr_unit
                       WHERE mr_tt.id_unit = mr_unit.id_unit
                       AND mr_tt.id_unit = 26;");
                     while($d = mysqli_fetch_array($data)){
-                    $ket_antri = $d['ket_antri'];
+                    $id_register = $d['id_register'];
                   ?>
                   <tr>
                     <td><center><?php echo $no++; ?></td>
@@ -174,7 +174,7 @@
                     <td><center>Bed <?php echo $d['no_bed']; ?></td>
                     <td><center>
                       <?php
-                      if(!$ket_antri){
+                      if($id_register=='123'){
                       ?>
                         <font class="greentext">Kosong</font>
                       <?php
@@ -191,12 +191,12 @@
                   <?php 
                     include '../koneksi.php';
                     $data = mysqli_query($koneksi,
-                     "SELECT mr_tt.kelas, mr_unit.nama_unit, mr_tt.no_bed, mr_tt.ket_antri
+                     "SELECT mr_tt.kelas, mr_unit.nama_unit, mr_tt.no_bed, mr_tt.id_register
                       FROM mr_tt, mr_unit
                       WHERE mr_tt.id_unit = mr_unit.id_unit
                       AND mr_tt.id_unit = 7;");
                     while($d = mysqli_fetch_array($data)){
-                    $ket_antri = $d['ket_antri'];
+                    $id_register = $d['id_register'];
                   ?>
                   <tr>
                     <td><center><?php echo $no++; ?></td>
@@ -205,7 +205,7 @@
                     <td><center>Bed <?php echo $d['no_bed']; ?></td>
                     <td><center>
                       <?php
-                      if(!$ket_antri){
+                      if($id_register=='123'){
                       ?>
                         <font class="greentext">Kosong</font>
                       <?php
@@ -222,12 +222,12 @@
                   <?php 
                     include '../koneksi.php';
                     $data = mysqli_query($koneksi,
-                     "SELECT mr_tt.kelas, mr_unit.nama_unit, mr_tt.no_bed, mr_tt.ket_antri
+                     "SELECT mr_tt.kelas, mr_unit.nama_unit, mr_tt.no_bed, mr_tt.id_register
                       FROM mr_tt, mr_unit
                       WHERE mr_tt.id_unit = mr_unit.id_unit
                       AND mr_tt.id_unit = 28;");
                     while($d = mysqli_fetch_array($data)){
-                    $ket_antri = $d['ket_antri'];
+                    $id_register = $d['id_register'];
                   ?>
                   <tr>
                     <td><center><?php echo $no++; ?></td>
@@ -238,7 +238,7 @@
                     <td><center>Bed <?php echo $d['no_bed']; ?></td>
                     <td><center>
                       <?php
-                      if(!$ket_antri){
+                      if($id_register=='123'){
                       ?>
                         <font class="greentext">Kosong</font>
                       <?php
@@ -255,12 +255,12 @@
                   <?php 
                     include '../koneksi.php';
                     $data = mysqli_query($koneksi,
-                     "SELECT mr_tt.kelas, mr_unit.nama_unit, mr_tt.no_bed, mr_tt.ket_antri
+                     "SELECT mr_tt.kelas, mr_unit.nama_unit, mr_tt.no_bed, mr_tt.id_register
                       FROM mr_tt, mr_unit
                       WHERE mr_tt.id_unit = mr_unit.id_unit
                       AND mr_tt.id_unit = 27;");
                     while($d = mysqli_fetch_array($data)){
-                    $ket_antri = $d['ket_antri'];
+                    $id_register = $d['id_register'];
                   ?>
                   <tr>
                     <td><center><?php echo $no++; ?></td>
@@ -271,7 +271,7 @@
                     <td><center>Bed <?php echo $d['no_bed']; ?></td>
                     <td><center>
                       <?php
-                      if(!$ket_antri){
+                      if($id_register=='123'){
                       ?>
                         <font class="greentext">Kosong</font>
                       <?php
@@ -288,12 +288,12 @@
                   <?php 
                     include '../koneksi.php';
                     $data = mysqli_query($koneksi,
-                     "SELECT mr_tt.kelas, mr_unit.nama_unit, mr_tt.no_bed, mr_tt.ket_antri
+                     "SELECT mr_tt.kelas, mr_unit.nama_unit, mr_tt.no_bed, mr_tt.id_register
                       FROM mr_tt, mr_unit
                       WHERE mr_tt.id_unit = mr_unit.id_unit
                       AND mr_tt.id_unit = 31;");
                     while($d = mysqli_fetch_array($data)){
-                    $ket_antri = $d['ket_antri'];
+                    $id_register = $d['id_register'];
                   ?>
                   <tr>
                     <td><center><?php echo $no++; ?></td>
@@ -304,7 +304,7 @@
                     <td><center>Bed <?php echo $d['no_bed']; ?></td>
                     <td><center>
                       <?php
-                      if(!$ket_antri){
+                      if($id_register=='123'){
                       ?>
                         <font class="greentext">Kosong</font>
                       <?php
@@ -321,12 +321,12 @@
                   <?php 
                     include '../koneksi.php';
                     $data = mysqli_query($koneksi,
-                     "SELECT mr_tt.kelas, mr_unit.nama_unit, mr_tt.no_bed, mr_tt.ket_antri
+                     "SELECT mr_tt.kelas, mr_unit.nama_unit, mr_tt.no_bed, mr_tt.id_register
                       FROM mr_tt, mr_unit
                       WHERE mr_tt.id_unit = mr_unit.id_unit
                       AND mr_tt.id_unit = 30;");
                     while($d = mysqli_fetch_array($data)){
-                    $ket_antri = $d['ket_antri'];
+                    $id_register = $d['id_register'];
                   ?>
                   <tr>
                     <td><center><?php echo $no++; ?></td>
@@ -337,7 +337,7 @@
                     <td><center>Bed <?php echo $d['no_bed']; ?></td>
                     <td><center>
                       <?php
-                      if(!$ket_antri){
+                      if($id_register=='123'){
                       ?>
                         <font class="greentext">Kosong</font>
                       <?php
@@ -354,13 +354,13 @@
                   <?php 
                     include '../koneksi.php';
                     $data = mysqli_query($koneksi,
-                     "SELECT mr_tt.kelas, mr_unit.nama_unit, mr_tt.no_bed, mr_tt.ket_antri
+                     "SELECT mr_tt.kelas, mr_unit.nama_unit, mr_tt.no_bed, mr_tt.id_register
                       FROM mr_tt, mr_unit
                       WHERE mr_tt.id_unit = mr_unit.id_unit
                       AND mr_tt.id_unit = 25
                       ORDER BY mr_tt.no_bed ASC;");
                     while($d = mysqli_fetch_array($data)){
-                    $ket_antri = $d['ket_antri'];
+                   $id_register = $d['id_register'];
                   ?>
                   <tr>
                     <td><center><?php echo $no++; ?></td>
@@ -371,7 +371,7 @@
                     <td><center>Bed <?php echo $d['no_bed']; ?></td>
                     <td><center>
                       <?php
-                      if(!$ket_antri){
+                      if($id_register=='123'){
                       ?>
                         <font class="greentext">Kosong</font>
                       <?php
